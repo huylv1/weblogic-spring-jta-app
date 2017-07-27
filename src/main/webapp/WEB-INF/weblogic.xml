@@ -1,0 +1,41 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<weblogic-web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:schemaLocation="http://xmlns.oracle.com/weblogic/weblogic-web-app http://xmlns.oracle.com/weblogic/weblogic-web-app/1.4/weblogic-web-app.xsd"
+                  xmlns="http://xmlns.oracle.com/weblogic/weblogic-web-app">
+    <container-descriptor>
+        <show-archived-real-path-enabled>true</show-archived-real-path-enabled>
+        <prefer-application-packages>
+            <package-name>com.google.common.*</package-name>
+            <package-name>org.aopalliance.aop.*</package-name>
+            <package-name>org.aopalliance.intercept.*</package-name>
+            <package-name>org.apache.commons.*</package-name>
+            <package-name>org.springframework.aop.*</package-name>
+            <package-name>org.springframework.asm.*</package-name>
+            <package-name>org.springframework.beans.*</package-name>
+            <package-name>org.springframework.context.*</package-name>
+            <package-name>org.springframework.core.*</package-name>
+            <package-name>org.springframework.dao.*</package-name>
+            <package-name>org.springframework.ejb.*</package-name>
+            <package-name>org.springframework.instrument.*</package-name>
+            <package-name>org.springframework.jca.*</package-name>
+            <package-name>org.springframework.jdbc.*</package-name>
+            <package-name>org.springframework.jmx.*</package-name>
+            <package-name>org.springframework.jndi.*</package-name>
+            <package-name>org.springframework.remoting.*</package-name>
+            <package-name>org.springframework.scheduling.*</package-name>
+            <package-name>org.springframework.scripting.*</package-name>
+            <package-name>org.springframework.stereotype.*</package-name>
+            <package-name>org.springframework.transaction.*</package-name>
+            <package-name>org.springframework.transaction.support.*</package-name>
+            <package-name>org.springframework.ui.*</package-name>
+            <package-name>org.springframework.util.*</package-name>
+            <package-name>org.springframework.validation.*</package-name>
+            <package-name>org.springframework.web.*</package-name>
+            <package-name>org.slf4j.*</package-name>
+        </prefer-application-packages>
+        <prefer-application-resources>
+            <resource-name>org/slf4j/impl/StaticLoggerBinder.class</resource-name>
+        </prefer-application-resources>
+    </container-descriptor>
+</weblogic-web-app>
+

@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
+    <output url="file://$MODULE_DIR$/target/classes" />
+    <output-test url="file://$MODULE_DIR$/target/test-classes" />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/test/resources" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/target/generated-sources/wsgen" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/target/generated-sources/wsdl" isTestSource="false" generated="true" />
+      <excludeFolder url="file://$MODULE_DIR$/target" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:weblogic:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:weblogic.server.merged:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:hk2-api_2.3.0-b01:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:hk2-utils_2.3.0-b01:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:hk2-locator_2.3.0-b01:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:hk2-runlevel_2.3.0-b01:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.oracle.db.jdbc7-no-dms:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:ojdbc7:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:oracle.ucp_12.1.0:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:osdt_cert:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:osdt_core:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:oraclepki:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:orai18n:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:orai18n-mapping:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:orai18n-utility:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:orai18n-collation:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:orai18n-translation:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:orai18n-net:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:orai18n-servlet:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:orai18n-lcsd:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:orai18n-tools:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:oracle.xdb_12.1.0:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:aqapi:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:ons:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.toplink:javax.persistence:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.toplink:eclipselink:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.toplink:toplink-grid:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.coherence:coherence:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.toplink:toplink-exalogic:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.oracle.css.common.security.i18n_7.1.0.0:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.oracle.css.common.security.xacml_7.1.0.0:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.oracle.css.common.security.saml2.utils_7.1.0.0:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.oracle.css.common.engine.impl_7.1.0.0:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.oracle.css.common.engine.api_7.1.0.0:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.oracle.css.common.security.api_7.1.0.0:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.oracle.css.common.security.impl_7.1.0.0:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.oracle.css.common.security.jdkutils_7.1.0.0:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.oracle.css.common.security.utils_7.1.0.0:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.oracle.css.common.security.saml2_7.1.0.0:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.oracle.css.common.security.saml2.manage_7.1.0.0:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.oracle.css.common.security.providers.utils_7.1.0.0:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.oracle.css.common.security.saml.utils_7.1.0.0:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.oracle.css.common.security.xacmlproviders.utils_7.1.0.0:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.oracle.css.common.security.providers.env_7.1.0.0:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.bea.core.certj_1.0.0.0_6-1-1:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:asm-3.1:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.oracle.core.eclipselink.integration_3.1.0.0:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.oracle.webservices.wls.wls-ws-metainf-services-impl_12.1.3:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.oracle.css.opensaml_7.1.0.0:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.oracle.css.opensaml2_7.1.0.0:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.oracle.css.weblogic.security.wls_7.1.0.0:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.oracle.css.weblogic.security_7.1.0.0:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:org.apache.openjpa_1.5.0.0_1-1-1:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.oracle.webservices.wls.wls-integration-impl_12.1.3:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.oracle.webservices.wls.wls-soap-stack-impl_12.1.3:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.oracle.webservices.wls.wls-soap-tool-jspgen_12.1.3:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.oracle.state-management.executor-internal-api_12.1.3:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.oracle.state-management.persistence-service-internal-api_12.1.3:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.oracle.state-management.persistence-service-provider-state-management-impl_12.1.3:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.oracle.state-management.state-management-internal-api_12.1.3:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.oracle.state-management.state-management-provider-aggregate-impl_12.1.3:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.oracle.state-management.state-management-provider-coherence-impl_12.1.3:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.oracle.state-management.state-management-provider-common-internal-api_12.1.3:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.oracle.state-management.state-management-provider-jdbc-impl_12.1.3:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.oracle.state-management.state-management-provider-memory-impl_12.1.3:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.oracle.state-management.transactional-map-internal-api_12.1.3:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.oracle.webservices.audit-internal-api_12.1.3:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.oracle.webservices.disi-impl_12.1.3:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.oracle.webservices.disi-internal-api_12.1.3:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.oracle.webservices.fabric-common-api_12.1.3:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.oracle.webservices.mdds-api_12.1.3:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.oracle.webservices.mdds-jersey-api_12.1.3:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.oracle.webservices.orasaaj-rt-api_12.1.3:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.oracle.webservices.session-manager-impl_12.1.3:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.oracle.webservices.session-manager-internal-api_12.1.3:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.oracle.webservices.user-api_12.1.3:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.oracle.webservices.ws-star-impl_12.1.3:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.oracle.webservices.wls.wls-ws-api_12.1.3:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.sun.istack.istack-commons-runtime_2.19:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.sun.xml.fastinfoset.FastInfoset_1.2.13:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.sun.xml.messaging.saaj.saaj-impl_1.3:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.sun.xml.stream.buffer.streambuffer_1.5.3:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.sun.xml.ws.jaxws-eclipselink-plugin_2.2:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.sun.xml.ws.jaxws-rt_2.2:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.sun.xml.ws.jaxws-tools_2.2:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.sun.xml.ws.policy_2.4:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.sun.xml.ws.sdo-eclipselink-plugin_2.2:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:org.glassfish.external.management-api_3.2.1-b001:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:org.glassfish.gmbal.gmbal-api-only_3.1.0-b001:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:org.glassfish.ha.ha-api_3.1.9:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:org.glassfish.metro.metro-cm-api_2.3.1:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:org.glassfish.metro.metro-cm-impl_2.3.1:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:org.glassfish.metro.metro-commons_2.3.1:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:org.glassfish.metro.metro-config-api_2.3.1:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:org.glassfish.metro.metro-runtime-api_2.3.1:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:org.glassfish.metro.metro-runtime-impl_2.3.1:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:org.glassfish.metro.soaptcp-api_2.3.1:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:org.glassfish.metro.soaptcp-impl_2.3.1:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:org.glassfish.metro.wsmc-api_2.3.1:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:org.glassfish.metro.wsrm-api_2.3.1:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:org.glassfish.metro.wsrm-impl_2.3.1:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:org.glassfish.metro.wsrx-commons_2.3.1:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:org.glassfish.metro.wssx-api_2.3.1:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:org.glassfish.metro.wstx-core_2.3.1:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:org.glassfish.metro.xmlfilter_2.3.1:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:org.jvnet.mimepull.mimepull_1.9.4:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:org.jvnet.staxex.stax-ex_1.7.5:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.oracle.http_client.http_client_12.1.3:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.oracle.webservices.orawsdl-api_12.1.3:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.sun.org.apache.xml.internal.resolver_20050927:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.sun.xml.bind.jaxb-core_2.2:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.sun.xml.bind.jaxb-impl_2.2:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.sun.xml.bind.jaxb-xjc_2.2:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.sun.xml.bind.jaxb-jxc_2.2:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:org.codehaus.woodstox.stax2-api_3.1.1:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:org.codehaus.woodstox.woodstox-core-asl_4.2.0:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.bea.core.diagnostics.instrumentor.config_3.1.0.0:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.bea.core.datasource6.binding_2.3.0.0:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.bea.core.descriptor.settable.binding_3.0.0.0:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.bea.core.diagnostics.accessor.binding_4.0.0.0:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.bea.core.management.core.binding_4.1.0.0:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.bea.core.kodo.integration.binding_4.0.0.0:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.bea.core.redef.binding_3.1.0.0:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.bea.core.descriptor.application.binding_3.0.0.0:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.bea.core.descriptor.j2ee.binding_3.0.0.0:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.bea.core.descriptor.wl.binding_4.0.0.0:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.oracle.core.coherence.descriptor.binding_4.0.0.0:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.oracle.core.coherence.app.descriptor.binding_1.1.0.0:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.bea.core.descriptor.application_3.0.0.0:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.bea.core.descriptor.j2ee_3.0.0.0:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.bea.core.descriptor.wl_4.0.0.0:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.bea.core.descriptor_2.2.0.0:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.bea.core.compat.wl.90_1.6.0.0:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.oracle.core.coherence.descriptor_4.0.0.0:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.oracle.core.coherence.app.descriptor_1.1.0.0:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:glassfish.jsf_2.0.0.0_2-1-20:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.bea.core.i18n_3.0.0.0:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.toplink:toplink-dataservices:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:xmlparserv2_sans_jaxp_services:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:monfox.dsnmp.agent_1.3.0.0_4-7-30:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:javax.xml.bind_1.0.0.0_2-2-3:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:javax.xml.ws_1.0.0.0_2-2:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.bea.core.i18n.generator_4.0.0.0:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.bea.core.i18n.tools_3.1.0.0:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:ant:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:ant-launcher:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.bea.core.kodo_1.8.0.0_4-2-1:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.bea.core.kodo.integration_4.0.0.0:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.bea.core.kodo.integration.tools_2.2.0.0:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.oracle.cmm.agent_1.0.0.b01:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.oracle.cmm.lowertier_1.0.0.0:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:jackson-core-asl-1.9.2:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:jackson-jaxrs-1.9.2:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:jackson-mapper-asl-1.9.2:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:jackson-xc-1.9.2:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:jettison-1.1:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:weblogic.jaxrs.internal.common_1.2.0.0:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:weblogic.jaxrs.client_3.0.0.0:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:weblogic.jaxrs.server_3.0.0.0:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:jersey-core-1.18:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:jersey-client-1.18:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:jersey-server-1.18:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:jersey-servlet-1.18:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:jersey-multipart-1.18:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:jersey-json-1.18:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:javax.websocket_1.0.0.0:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:glassfish.tyrus_1.0.0.0_1-3-5:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:glassfish.tyrus.fallback_1.0.0.0_1-0:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.oracle.weblogic.websocket.client_1.0.0.0:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:javax.json_1.0.0.0_1-0:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.oracle.weblogic.build-1.7-utils_1.0.0.0:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:hibernate.validator_1.0.0.0_4-1-0:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:config-launch:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.oracle.cie.config-wls-schema_12.1.3.0:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.bea.core.xml.xmlbeans_1.0.0.0_2-6-0:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:javax.xml.stream_1.1.1.0:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.oracle.cie.config-wls-api_1.0.0.0:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.oracle.cie.config-wls_8.1.0.0:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.oracle.cie.config_8.1.0.0:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.oracle.cie.encryption_2.1.0.0:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.oracle.cie.comdev_7.1.0.0:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.oracle.cie.wizard_7.1.0.0:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.oracle.cie.xmldh_2.7.0.0:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.oracle.cie.dependency_1.1.0.0:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.bea.core.xquery_1.8.0.0:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.bea.core.xquery.xmlbeans-interop_1.8.0.0:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.oracle.cie.config-security_8.1.0.0:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.oracle.cie.config-security-impl_8.1.0.0:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.oracle.cie.config-owsm_8.1.0.0:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.oracle.cie.service-table_1.1.0.0:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.oracle.cie.service-table-schema_1.1.0.0:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.oracle.cie.service-table-impl_1.1.0.0:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.oracle.cie.rcu_1.1.0.0:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.oracle.cie.config-quickstart-launcher_1.0.0.0:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.oracle.cie.config-quickstart-schema-launcher_1.0.0.0:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:bcprov-jdk16-1.45:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:orapki.lib_12.1.3:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:ojmisc:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:cryptoj:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:weblogic-domain-binding:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:weblogic-domain-binding-compatibility:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:diagnostics-binding:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:diagnostics-image-binding:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:mysql-connector-java-commercial-5.1.22-bin:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:wlsqlserver:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:wldb2:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:wlsybase:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:wlinformix:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:fmwgenerictoken:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:osgi:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:wlw-langx:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:javax.jsp_4.0.0.0_2-2:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:glassfish.el_1.2.0.0_2-2:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:javax.servlet_2.2.0.0_3-0:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.bea.core.repackaged.jdt_1.0.0.0_3-10-0:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.bea.core.utils.compiler_2.2.0.0:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.bea.core.weblogic.web.api_4.0.0.0:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:jcom:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:weblogic-L10N:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:weblogic-de:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:weblogic-es:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:weblogic-fr:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:weblogic-it:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:weblogic-ja:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:weblogic-ko:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:weblogic-pt_BR:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:weblogic-zh_CN:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:weblogic-zh_TW:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:wljaccutil:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.oracle.webservices.wls.wls-tools-ext_12.1.3:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.oracle.webservices.ws-databinding-api_12.1.3:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:com.oracle.webservices.ws-databinding-plugins-impl_12.1.3:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.oracle.weblogic:jython-modules:12.1.3-0-0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: javax.servlet:javax.servlet-api:3.1.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: javax.el:javax.el-api:3.0.0" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-webmvc:4.3.9.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-aop:4.3.9.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-beans:4.3.9.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-context:4.3.9.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-core:4.3.9.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-expression:4.3.9.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-web:4.3.9.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.21" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: ch.qos.logback:logback-classic:1.1.7" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: ch.qos.logback:logback-core:1.1.7" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:jcl-over-slf4j:1.7.21" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.7.6" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.7.6" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-core:2.7.6" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpclient:4.5.3" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpcore:4.4.6" level="project" />
+    <orderEntry type="library" name="Maven: commons-codec:commons-codec:1.9" level="project" />
+    <orderEntry type="library" name="Maven: com.google.guava:guava:22.0" level="project" />
+    <orderEntry type="library" name="Maven: com.google.code.findbugs:jsr305:1.3.9" level="project" />
+    <orderEntry type="library" name="Maven: com.google.errorprone:error_prone_annotations:2.0.18" level="project" />
+    <orderEntry type="library" name="Maven: com.google.j2objc:j2objc-annotations:1.1" level="project" />
+    <orderEntry type="library" name="Maven: org.codehaus.mojo:animal-sniffer-annotations:1.14" level="project" />
+  </component>
+</module>

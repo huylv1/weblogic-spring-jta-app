@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.baoviet</groupId>
+    <artifactId>baoviet-weblogic</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>war</packaging>
+
+    <properties>
+        <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <!-- Logging -->
+        <spring.version>4.3.9.RELEASE</spring.version>
+
+        <logback.version>1.1.7</logback.version>
+        <slf4j.version>1.7.21</slf4j.version>
+        <jackson.version>2.7.6</jackson.version>
+        <junit.version>4.11</junit.version>
+        <jackson.version>2.7.6</jackson.version>
+
+        <weblogic.username>weblogic</weblogic.username>
+        <weblogic.password>12345678</weblogic.password>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.oracle.weblogic</groupId>
+            <artifactId>weblogic-server-pom</artifactId>
+            <version>12.1.3-0-0</version>
+            <type>pom</type>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>3.1.0</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.el</groupId>
+            <artifactId>javax.el-api</artifactId>
+            <version>3.0.0</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>${spring.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>commons-logging</groupId>
+                    <artifactId>commons-logging</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <!-- Logging with SLF4J & LogBack -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>${slf4j.version}</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>${logback.version}</version>
+            <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>jcl-over-slf4j</artifactId>
+            <version>${slf4j.version}</version>
+        </dependency>
+
+        <!-- Jackson so spring mvc handles Json responses out of the box -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-annotations</artifactId>
+            <version>${jackson.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>${jackson.version}</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient -->
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.5.3</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>commons-logging</groupId>
+                    <artifactId>commons-logging</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>22.0</version>
+        </dependency>
+
+
+    </dependencies>
+
+    <build>
+        <finalName>baoviet-webapp</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>3.1.0</version>
+                <configuration>
+                    <failOnMissingWebXml>false</failOnMissingWebXml>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.6.1</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+
+            <!-- WebLogic Server 12c Maven Plugin -->
+            <plugin>
+                <groupId>com.oracle.weblogic</groupId>
+                <artifactId>weblogic-maven-plugin</artifactId>
+                <version>12.1.3-0-0</version>
+                <configuration>
+                    <middlewareHome>C:\Oracle\MIDDLE~1\ORACLE~1\wlserver\server</middlewareHome>
+                    <user>${weblogic.username}</user>
+                    <password>${weblogic.password}</password>
+                    <source>${project.build.directory}/${project.build.finalName}.${project.packaging}</source>
+                    <name>${project.build.finalName}</name>
+                    <targets>DefaultServer</targets>
+                    <adminurl>t3://127.0.0.1:7101</adminurl>
+                    <verbose>true</verbose>
+                </configuration>
+                <executions>
+
+                    <execution>
+                        <id>cleanup</id>
+                        <phase>pre-clean</phase>
+                        <goals>
+                            <goal>undeploy</goal>
+                        </goals>
+                        <configuration>
+                            <failOnError>false</failOnError>
+                        </configuration>
+                    </execution>
+
+                    <execution>
+                        <id>wls-undeploy</id>
+                        <phase>post-integration-test</phase>
+                        <goals>
+                            <goal>undeploy</goal>
+                        </goals>
+                    </execution>
+
+                    <execution>
+                        <id>wls-appc</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>appc</goal>
+                        </goals>
+                    </execution>
+
+                    <!--<execution>
+                        <id>wls-distribute-app</id>
+                        <phase>pre-integration-test</phase>
+                        <goals>
+                            <goal>distribute-app</goal>
+                        </goals>
+                    </execution>-->
+
+                    <execution>
+                        <id>wls-deploy</id>
+                        <phase>pre-integration-test</phase>
+                        <goals>
+                            <goal>deploy</goal>
+                        </goals>
+                    </execution>
+
+                    <!--<execution>
+                        <id>wls-redeploy</id>
+                        <phase>deploy</phase>
+                        <goals>
+                            <goal>redeploy</goal>
+                        </goals>
+                    </execution>-->
+
+                    <execution>
+                        <id>wls-list-apps</id>
+                        <phase>pre-integration-test</phase>
+                        <goals>
+                            <goal>list-apps</goal>
+                        </goals>
+                    </execution>
+
+                    <!-- Generates source code -->
+                    <!--<execution>
+                        <id>clientgen</id>
+                        <phase>generate-resources</phase>
+                        <goals>
+                            <goal>ws-clientgen</goal>
+                        </goals>
+                        <configuration>
+                            <wsdl>${basedir}/wsdl/ImsServicePort.xml</wsdl>
+                            <destDir>${project.build.outputDirectory}</destDir>
+                            <packageName>maven_plugin.simple.client</packageName>
+                        </configuration>
+                    </execution>-->
+                    <!--<execution>
+                        <id>wsgen</id>
+                        <phase>process-classes</phase>
+                        <goals>
+                            <goal>wsgen</goal>
+                        </goals>
+                        <configuration>
+                            <destDir>${project.build.directory}/wsgenOutput/</destDir>
+                            <sei>com.baoviet.mhol.web.jaxws.Hello</sei>
+                            <verbose>true</verbose>
+                            <genWsdl>true</genWsdl>
+                        </configuration>
+                    </execution>-->
+                    <!--<execution>
+                        <id>wsdlc</id>
+                        <phase>generate-resources</phase>
+                        <goals>
+                            <goal>ws-wsdlc</goal>
+                        </goals>
+                        <configuration>
+                            <srcWsdl>${basedir}/wsdl/ImsServicePort.xml</srcWsdl>
+                            <destJwsDir>${project.build.directory}/jwsImpl</destJwsDir>
+                            <destImplDir>${project.build.directory}/output</destImplDir>
+                            <packageName>maven_plugin.simple</packageName>
+                            <verbose>true</verbose>
+                        </configuration>
+                    </execution>-->
+
+                    <!--Build Webservice-->
+                    <!--<execution>
+                        <id>first-jwsc</id>
+                        <phase>compile</phase>
+                        <goals>
+                            <goal>ws-jwsc</goal>
+                        </goals>
+                        <configuration>
+                            <srcDir>${basedir}/src/main/java</srcDir>
+                            <destDir>${project.build.directory}/jwscOutput/</destDir>
+                            <jws>            &lt;!&ndash; no parent <module> &ndash;&gt;
+                                <file>maven_plugin/simple/ImsServiceImpl.java</file>
+                                <compiledWsdl>${project.build.directory}/jwsImpl/ImsServicePort_wsdl.jar</compiledWsdl>
+                                <transportType>
+                                    <type>WLHttpTransport</type>
+                                </transportType>
+                            </jws>
+                        </configuration>
+                    </execution>-->
+
+                </executions>
+            </plugin>
+
+            <!--<plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>jaxws-maven-plugin</artifactId>
+                <version>2.4.1</version>
+                <executions>
+                    <execution>
+                        <id>generate-wsdl</id>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>wsgen</goal>
+                        </goals>
+                        <configuration>
+                            <destDir>${project.build.directory}/wsgenOutput/</destDir>
+                            <sei>com.baoviet.mhol.web.jaxws.Hello</sei>
+                            <genWsdl>true</genWsdl>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>generate-stubs</id>
+                        <phase>process-classes</phase>
+                        <goals>
+                            <goal>wsimport</goal>
+                        </goals>
+                        <configuration>
+                            <wsdlDirectory>target/jaxws/wsgen/wsdl</wsdlDirectory>
+                            <wsdlFiles>
+                                <wsdlFile>&lt;!&ndash; class name goes here &ndash;&gt;Service.wsdl</wsdlFile>
+                            </wsdlFiles>
+                            &lt;!&ndash; *** you need the next line to set the wsdlLocation in the generated stubs *** &ndash;&gt;
+                            <wsdlLocation>http://localhost:8080/test</wsdlLocation>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>-->
+        </plugins>
+    </build>
+</project>
