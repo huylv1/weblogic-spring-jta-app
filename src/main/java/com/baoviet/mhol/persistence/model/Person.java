@@ -12,7 +12,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "Person", schema = "duthao")
+@Table(name = "Person")
 public class Person {
 
     @Id

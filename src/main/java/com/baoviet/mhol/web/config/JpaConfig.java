@@ -18,6 +18,7 @@ import org.springframework.orm.jpa.vendor.HibernateJpaDialect;
 import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
+import org.springframework.transaction.jta.JtaTransactionManager;
 import org.springframework.transaction.jta.WebLogicJtaTransactionManager;
 
 
@@ -43,10 +44,10 @@ public class JpaConfig {
     @Bean
     public LocalContainerEntityManagerFactoryBean entityManagerFactory(DataSource dataSource, JpaVendorAdapter jpaVendorAdapter) {
         LocalContainerEntityManagerFactoryBean lef = new LocalContainerEntityManagerFactoryBean();
-        lef.setDataSource(dataSource);
         lef.setJpaVendorAdapter(jpaVendorAdapter);
         lef.setPackagesToScan("com.baoviet.mhol.persistence.model");
         lef.setJpaDialect(new HibernateJpaDialect());
+        lef.setJtaDataSource(dataSource);
         return lef;
     }
 
@@ -60,10 +61,8 @@ public class JpaConfig {
     }
 
     @Bean
-    public PlatformTransactionManager transactionManager(EntityManagerFactory emf){
-        JpaTransactionManager transactionManager = new JpaTransactionManager();
-        transactionManager.setEntityManagerFactory(emf);
-        return transactionManager;
+    JtaTransactionManager transactionManager() {
+        return new WebLogicJtaTransactionManager();
     }
 
     @Bean
