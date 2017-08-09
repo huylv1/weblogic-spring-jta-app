@@ -12,7 +12,7 @@
         <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <!-- Logging -->
-        <spring.version>4.3.9.RELEASE</spring.version>
+        <spring.version>4.3.10.RELEASE</spring.version>
 
         <logback.version>1.1.7</logback.version>
         <slf4j.version>1.7.21</slf4j.version>
@@ -60,6 +60,28 @@
                 </exclusion>
             </exclusions>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.springframework.data/spring-data-jpa -->
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-jpa</artifactId>
+            <version>1.11.6.RELEASE</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-orm</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>5.2.10.Final</version>
+        </dependency>
+
 
         <!-- Logging with SLF4J & LogBack -->
         <dependency>
@@ -172,13 +194,13 @@
                         </goals>
                     </execution>
 
-                    <execution>
+                    <!--<execution>
                         <id>wls-appc</id>
                         <phase>package</phase>
                         <goals>
                             <goal>appc</goal>
                         </goals>
-                    </execution>
+                    </execution>-->
 
                     <!--<execution>
                         <id>wls-distribute-app</id>

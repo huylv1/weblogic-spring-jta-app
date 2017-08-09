@@ -6,6 +6,7 @@ import com.google.common.collect.Sets;
 import org.springframework.web.WebApplicationInitializer;
 import org.springframework.web.context.ContextLoaderListener;
 import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
+import org.springframework.web.context.support.XmlWebApplicationContext;
 import org.springframework.web.filter.CharacterEncodingFilter;
 import org.springframework.web.servlet.DispatcherServlet;
 
@@ -20,6 +21,9 @@ public class WebAppInitializer implements WebApplicationInitializer {
         cookieConfig.setHttpOnly(true);
 
         // Spring Root Context
+        /*XmlWebApplicationContext rootContext = new XmlWebApplicationContext();
+        rootContext.setConfigLocation("classpath:applicationContext.xml");*/
+
         AnnotationConfigWebApplicationContext rootContext = new AnnotationConfigWebApplicationContext();
         rootContext.register(RootConfig.class);
         sc.addListener(new ContextLoaderListener(rootContext));

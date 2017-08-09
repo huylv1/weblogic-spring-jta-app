@@ -5,10 +5,16 @@
     <container-descriptor>
         <show-archived-real-path-enabled>true</show-archived-real-path-enabled>
         <prefer-application-packages>
+            <package-name>javax.persistence.*</package-name>
+            <package-name>javax.persistence.criteria.*</package-name>
+            <package-name>javax.persistence.metamodel.*</package-name>
+            <package-name>javax.persistence.spi.*</package-name>
+
             <package-name>com.google.common.*</package-name>
             <package-name>org.aopalliance.aop.*</package-name>
             <package-name>org.aopalliance.intercept.*</package-name>
             <package-name>org.apache.commons.*</package-name>
+            <package-name>org.springframework.orm.*</package-name>
             <package-name>org.springframework.aop.*</package-name>
             <package-name>org.springframework.asm.*</package-name>
             <package-name>org.springframework.beans.*</package-name>
