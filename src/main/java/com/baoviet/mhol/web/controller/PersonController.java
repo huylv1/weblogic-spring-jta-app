@@ -25,7 +25,7 @@ public class PersonController {
     @PostMapping("/person")
     @ResponseBody
     public String create(@ModelAttribute Person person) {
-        log.info("Submitted person {}", person);
+//        log.info("Submitted person {}", person);
         personService.savePerson(person);
         return person.toString();
     }
