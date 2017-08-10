@@ -1,5 +1,6 @@
 package com.baoviet.mhol.web.config;
 
+import javax.annotation.Resource;
 import javax.servlet.*;
 
 import com.google.common.collect.Sets;

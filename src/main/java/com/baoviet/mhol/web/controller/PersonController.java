@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.*;
 /**
  * Created by levietcongitsol on 7/25/2017.
  */
-@Controller
+@RestController
 public class PersonController {
     private Logger log = LoggerFactory.getLogger(getClass());
 
@@ -30,25 +30,5 @@ public class PersonController {
         return person.toString();
     }
 
-//
-//    public static void main(String[] args) {
-//        ExpressionParser parser = new SpelExpressionParser();
-//        Expression exp = parser.parseExpression("'Hello World'");
-//        String message = (String) exp.getValue();
-//        System.out.println(message);
-//
-//
-//        Person p1 = new Person();
-//        p1.setId(1);
-//        p1.setName("Person 1");
-//
-//        Person p2 = new Person();
-//        p2.setId(1);
-//        p2.setName("Person 2");
-//
-//        StandardEvaluationContext context = new StandardEvaluationContext();
-//        context.setVariable("p1", p1);
-//        context.setVariable("p2", p2);
-//        System.out.println(parser.parseExpression("#p1.name + ' ' + #p2.name").getValue(context));
-//    }
+
 }

@@ -68,6 +68,32 @@
             <version>1.11.6.RELEASE</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-rest-webmvc</artifactId>
+            <version>2.6.6.RELEASE</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/io.springfox/springfox-swagger2 -->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>2.7.0</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/io.springfox/springfox-swagger-ui -->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>2.7.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-data-rest</artifactId>
+            <version>2.7.0</version>
+        </dependency>
+
 
         <dependency>
             <groupId>org.springframework</groupId>
@@ -171,7 +197,7 @@
                 <artifactId>weblogic-maven-plugin</artifactId>
                 <version>12.1.3-0-0</version>
                 <configuration>
-                    <middlewareHome>C:\Oracle\MIDDLE~1\ORACLE~1\wlserver\server</middlewareHome>
+                    <middlewareHome>C:/Oracle/Middleware/Oracle_Home</middlewareHome>
                     <user>${weblogic.username}</user>
                     <password>${weblogic.password}</password>
                     <source>${project.build.directory}/${project.build.finalName}.${project.packaging}</source>
@@ -301,6 +327,18 @@
                             </jws>
                         </configuration>
                     </execution>-->
+
+                    <execution>
+                        <id>wls-wlst-server</id>
+                        <phase>post-integration-test</phase>
+                        <goals>
+                            <goal>wlst</goal>
+                        </goals>
+                        <configuration>
+                            <fileName>d:/huylv/create_data_source.py</fileName>
+                            <executeScriptBeforeFile>true</executeScriptBeforeFile>
+                        </configuration>
+                    </execution>
 
                 </executions>
             </plugin>
