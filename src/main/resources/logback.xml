@@ -7,7 +7,31 @@
         </encoder>
     </appender>
 
+    <property scope="context" name="LOG_FILE" value="mhol.log" />
+    <property scope="context" name="MY_HOME" value="D:/huylv" />
+
+    <appender name="FILEOUT" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${MY_HOME}/${LOG_FILE}.log</file>
+        <append>true</append>
+        <!-- Support multiple-JVM writing to the same log file -->
+        <prudent>true</prudent>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!-- Daily rollover -->
+            <fileNamePattern>${MY_HOME}/${LOG_FILE}.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <!-- Keep 7 days' worth of history -->
+            <maxHistory>7</maxHistory>
+        </rollingPolicy>
+        <encoder>
+            <pattern>[%-5level] %d{HH:mm:ss.SSS} [%.6thread] %logger - %msg%n</pattern>
+            <charset>UTF-8</charset>
+        </encoder>
+    </appender>
+
+    <!-- # logs the SQL statements -->
+    <logger name="org.hibernate.SQL" level="DEBUG" />
+
     <root level="INFO">
         <appender-ref ref="STDOUT" />
+        <appender-ref ref="FILEOUT" />
     </root>
 </configuration>

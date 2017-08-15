@@ -6,14 +6,20 @@ package com.baoviet.mhol.persistence.model;
 
 import com.google.common.base.MoreObjects;
 import com.google.common.base.Objects;
+import org.hibernate.annotations.Cache;
+import org.hibernate.annotations.CacheConcurrencyStrategy;
+import org.springframework.hateoas.Identifiable;
 
+import javax.persistence.Cacheable;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
+@Cacheable
+@Cache(usage = CacheConcurrencyStrategy.READ_WRITE, region = "personCache")
 @Table(name = "Person")
-public class Person {
+public class Person implements Identifiable<Long> {
 
     @Id
     private Long id;

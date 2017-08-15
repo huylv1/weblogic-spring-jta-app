@@ -108,6 +108,27 @@
             <version>5.2.10.Final</version>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-ehcache -->
+        <!--<dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-ehcache</artifactId>
+            <version>5.2.10.Final</version>
+        </dependency>-->
+        <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-jcache -->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-jcache</artifactId>
+            <version>5.2.10.Final</version>
+        </dependency>
+
+        <!-- Ehcache 3.x -->
+        <dependency>
+            <groupId>org.ehcache</groupId>
+            <artifactId>ehcache</artifactId>
+            <version>3.3.1</version>
+        </dependency>
+
+
 
         <!-- Logging with SLF4J & LogBack -->
         <dependency>
