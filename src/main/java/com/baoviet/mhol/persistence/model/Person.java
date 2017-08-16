@@ -18,7 +18,7 @@ import javax.persistence.Table;
 @Entity
 @Cacheable
 @Cache(usage = CacheConcurrencyStrategy.READ_WRITE, region = "personCache")
-@Table(name = "Person")
+@Table(name = "jpa_person")
 public class Person implements Identifiable<Long> {
 
     @Id

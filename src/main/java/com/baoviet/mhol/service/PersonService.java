@@ -22,6 +22,8 @@ public class PersonService {
 
     public void savePerson(Person person) {
         personDAO.save(person);
+
+
 //        entityManager.persist(person);
     }
 }
