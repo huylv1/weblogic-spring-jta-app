@@ -11,6 +11,7 @@ import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.data.repository.query.Param;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 import org.springframework.data.rest.core.annotation.RestResource;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.persistence.QueryHint;
 import java.util.List;
@@ -24,7 +25,7 @@ public interface IPersonDAO extends PagingAndSortingRepository<Person, Long>, Jp
             @QueryHint(name = "org.hibernate.cacheMode", value = "NORMAL"),
             @QueryHint(name = "org.hibernate.cacheRegion", value = "personCache")
     })
-    Page<Person> findByFirstName(@Param("firstName") String firstName, Pageable p);
+    Page<Person> findByFirstName(@Param("firstName") @RequestParam("firstName") String firstName, Pageable p);
 
     @QueryHints(value = {
             @QueryHint(name = "org.hibernate.cacheable", value = "true"),

@@ -3,10 +3,13 @@ package com.baoviet.mhol.aop;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Pointcut;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
+
+import java.util.concurrent.TimeUnit;
 
 /**
  * @author Jigish Patel
@@ -37,10 +40,11 @@ public class ExecutionTimeAdvice {
 
         long duration = (endTime - startTime);
 
-        logger.info("Method " + pjp.getSignature() + " took " + duration + " ns (" + (duration/1000000.0) + " ms, " + (duration/1000000000.0) + " s).");
+        logger.info("Method " + pjp.getSignature() + " took " + duration + " ns (" + TimeUnit.NANOSECONDS.toMillis(duration) + " ms, " + TimeUnit.NANOSECONDS.toSeconds(duration) + " s).");
 
         logger.info(String.format("Exits method: %s. \n", pjp.getSignature()));
 
         return retVal;
     }
+
 }
